@@ -8,7 +8,8 @@ export class PersonalAccount extends DioAccount {
   
   deposit = (value: number): boolean => {
     if(this.validateStatus()){
-      this.balance += value + 10
+        const balance = this.getBalance()
+      this.setBalance(balance + value + 10)
       return true
     }
 
