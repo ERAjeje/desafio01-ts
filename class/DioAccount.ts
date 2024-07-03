@@ -13,7 +13,7 @@ export abstract class DioAccount {
     return this.name
   }
 
-  setBalance = (value: number): void => {
+  protected setBalance = (value: number): void => {
     this.balance = value
   }
 
